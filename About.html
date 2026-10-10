@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Katie Lim</title>
+<meta name="description" content="About Katie Lim, Computer Science student specializing in Interactive Media and Game Design.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+<nav>
+  <div class="wrap">
+    <a href="index.html" class="nav-mark"><span class="dot"></span>katie.lim</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="page-head">
+  <div class="wrap">
+    <h1 class="page-title">About</h1>
+    <p class="page-sub">Computer Science — Interactive Media &amp; Game Design</p>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          I'm a Computer Science student focused on Interactive Media and Game Design — the
+          corner of CS where the output is meant to be felt, not just run. I like the whole
+          stack of making a game: the code that drives it, the rules that shape how it plays,
+          and the small details that make it feel alive.
+        </p>
+        <p>
+          Replace this paragraph with a couple of real sentences about you — your program,
+          your year, what draws you to games or interactive media specifically, and what
+          you're looking for next (internship, collaborators, freelance work).
+        </p>
+      </div>
+      <div class="about-skills">
+        <div class="skill-group">
+          <p class="skill-label">languages</p>
+          <div class="skill-list">
+            <span class="skill-chip">C</span>
+            <span class="skill-chip">C++</span>
+            <span class="skill-chip">C#</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <p class="skill-label">engines</p>
+          <div class="skill-list">
+            <span class="skill-chip">Unity</span>
+            <span class="skill-chip">Titan Engine (custom)</span>
+            <span class="skill-chip">AE Engine</span>
+            <span class="skill-chip">Cprocessing</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <p class="skill-label">interests</p>
+          <div class="skill-list">
+            <span class="skill-chip">VR</span>
+            <span class="skill-chip">Engine Architecture</span>
+            <span class="skill-chip">Level Design</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © <span id="year"></span> Katie Lim — built with HTML &amp; CSS, hosted on GitHub Pages
+</footer>
+
+<script src="background.js" defer></script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
