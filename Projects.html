@@ -31,7 +31,7 @@
 <header class="page-head">
   <div class="wrap">
     <h1 class="page-title">Projects</h1>
-    <p class="page-sub">Team games I've programmed, and a tabletop game I helped design.</p>
+    <p class="page-sub">Projects I've worked on during my time at DigiPen.</p>
   </div>
 </header>
 
@@ -49,17 +49,46 @@
           <p class="project-meta">In progress · Team project</p>
           <h3>Mr. Bones</h3>
           <p class="project-desc">
-            You play as Noah Bones, a soul trapped in hell who can shrink and expand to get
-            through the level, collect items and find a way out. It runs on Titan Engine,
-            which my team wrote from scratch instead of using Unity or Unreal. I handle
-            resource management, asset management and audio.
+            You play as Noah Bones, a lost soul trapped in hell. Guided by a mysterious entity
+            of light, you gain the power to shrink and expand, and use it to get through
+            dangerous areas, collect items and find a way out. The game runs on Titan Engine,
+            which my team built from scratch instead of using Unity or Unreal.
           </p>
-          <ul class="project-tags"><li>Custom engine</li><li>Audio</li><li>Asset pipeline</li></ul>
+          <ul class="project-tags"><li>Custom engine</li><li>Resource manager</li><li>Asset management</li><li>Audio</li></ul>
         </div>
+        <details class="project-more">
+          <summary><span class="when-closed">View full project</span><span class="when-open">Hide details</span></summary>
+          <div class="project-panel">
+            <div class="video-frame">
+              <video controls playsinline preload="metadata" poster="assets/mrbones-intro.jpg">
+                <source src="assets/Trailer.mp4" type="video/mp4">
+                Your browser can't play this video.
+              </video>
+            </div>
+            <div class="panel-grid">
+              <div>
+                <h4>What I did</h4>
+                <ul>
+                  <li>Resource manager: the engine system that loads, keeps track of and unloads the game's resources</li>
+                  <li>Asset management: organising the game's assets and getting them into the engine</li>
+                  <li>Audio champion: in charge of the game's audio, from playback in the engine to the sounds you hear in game</li>
+                </ul>
+              </div>
+              <div>
+                <h4>How it plays</h4>
+                <ul>
+                  <li>Shrink to slip into tight spaces, expand to deal with what's in your way</li>
+                  <li>Collect items as you explore hell</li>
+                  <li>Find the escape route out</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </details>
       </article>
 
       <article class="project" id="grass">
-        <div class="project-thumb"><img src="https://img.youtube.com/vi/DJYpiA7K47s/hqdefault.jpg" alt="Don't Touch My Grass! gameplay" loading="lazy"></div>
+        <div class="project-thumb"><img src="assets/dont%20touch%20my%20grass.png" alt="Don't Touch My Grass! gameplay" loading="lazy"></div>
         <div class="project-info">
           <p class="project-meta">Year 1, Trimester 2 · Team project</p>
           <h3>Don't Touch My Grass!</h3>
@@ -99,7 +128,7 @@
       </article>
 
       <article class="project" id="donut-panic">
-        <div class="project-thumb"><img src="https://static.wixstatic.com/media/d9d9ac_2ef6708afb624f35a8c2cbca67ca9515f000.jpg" alt="DoNut Panic gameplay" loading="lazy"></div>
+        <div class="project-thumb"><img src="assets/donut-cover.png" alt="DoNut Panic title slide" loading="lazy"></div>
         <div class="project-info">
           <p class="project-meta">Year 1, Trimester 1 · Team of 5</p>
           <h3>DoNut Panic</h3>
@@ -116,15 +145,11 @@
           <div class="project-panel">
             <div class="video-frame">
               <!-- Plays assets/donut-panic.mp4 if you add it; otherwise streams the copy hosted on Wix -->
-              <video controls playsinline preload="metadata" poster="https://static.wixstatic.com/media/d9d9ac_2ef6708afb624f35a8c2cbca67ca9515f000.jpg">
+              <video controls playsinline preload="metadata" poster="assets/donut-cover.png">
                 <source src="assets/donut-panic.mp4" type="video/mp4">
                 <source src="https://video.wixstatic.com/video/d9d9ac_2ef6708afb624f35a8c2cbca67ca9515/720p/mp4/file.mp4" type="video/mp4">
                 Your browser can't play this video.
               </video>
-            </div>
-            <div class="shots">
-              <a href="assets/donut-gameplay-concept.jpg" target="_blank" rel="noopener"><img src="assets/donut-gameplay-concept.jpg" alt="Pitch slide: the player donut grows by eating prey, then wins or loses against the boss donut" loading="lazy"></a>
-              <a href="assets/donut-cover.jpg" target="_blank" rel="noopener"><img src="assets/donut-cover.jpg" alt="DoNut Panic pitch title slide" loading="lazy"></a>
             </div>
             <div class="panel-grid">
               <div>
@@ -152,26 +177,161 @@
   </div>
 </section>
 
-<section id="design">
+<section id="level-design">
   <div class="wrap">
     <div class="section-head">
-      <h2>Design</h2>
+      <h2>Level Design</h2>
     </div>
 
     <div class="projects">
-      <article class="project no-thumb" id="bubbles-delivery">
+
+      <article class="project" id="one-million-quest">
+        <div class="project-thumb"><img src="assets/one-million-quest-map.jpg" alt="Top-down map of Mr. Doostbin's underground den: casino, factory floor, storage and worker rooms" loading="lazy"></div>
         <div class="project-info">
-          <p class="project-meta">Tabletop game · Team project</p>
+          <p class="project-meta">Quest campaign · Solo project</p>
+          <h3>One Million Quest</h3>
+          <p class="project-desc">
+            Under a city shophouse, Mr. Doostbin runs an underground Labubu reselling den: a
+            counterfeit factory, a casino for laundering money, a guard wing and a livestream
+            studio, all linked by vents. You play Bobby, a worker lured in by a fake job offer,
+            who has to collect 1,000,000 Labubu Coins of evidence across 8 zones and escape
+            before Mr. Doostbin catches him.
+          </p>
+          <ul class="project-tags"><li>RPG Maker</li><li>Level design</li><li>Quest design</li><li>Pacing</li></ul>
+          <a class="project-link" href="assets/OneMillionQuest_KatieLim.pdf" target="_blank" rel="noopener">Read the design document (PDF) ↗</a>
+        </div>
+
+        <details class="project-more">
+          <summary><span class="when-closed">View full project</span><span class="when-open">Hide details</span></summary>
+          <div class="project-panel">
+            <a class="map-full" href="assets/one-million-quest-map.jpg" target="_blank" rel="noopener">
+              <img src="assets/one-million-quest-map.jpg" alt="Full map of the den" loading="lazy">
+            </a>
+            <div class="shots">
+              <a href="assets/one-million-quest-flow.png" target="_blank" rel="noopener"><img src="assets/one-million-quest-flow.png" alt="Flow chart of the route from the employee's bedroom to the surface, with optional branches" loading="lazy"></a>
+              <a href="assets/one-million-quest-intensity.png" target="_blank" rel="noopener"><img src="assets/one-million-quest-intensity.png" alt="Intensity curve across the 15 beats of the level, peaking at the casino vault and the vent shaft escape" loading="lazy"></a>
+            </div>
+            <div class="panel-grid">
+              <div>
+                <h4>What I designed</h4>
+                <ul>
+                  <li>The story, setting and characters, plus the full map of the den</li>
+                  <li>16 key events over three phases, each worth a set number of Labubu Coins</li>
+                  <li>A coin economy where 1,000,000 clears the level and optional events push it to 1,150,000</li>
+                  <li>An intensity curve and flow for a run of about 55 minutes</li>
+                </ul>
+              </div>
+              <div>
+                <h4>How it plays</h4>
+                <ul>
+                  <li>Phase 1, The Hidden Room: recover your stash and crack the safe for the den's blueprint</li>
+                  <li>Phase 2, Working the Den: gather evidence from the factory, storage, dorm, livestream studio and casino</li>
+                  <li>Final phase: crack the casino vault, sabotage the factory and escape up the vent shaft</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </details>
+      </article>
+
+      <article class="project" id="overgrowth">
+        <div class="project-thumb">
+          <video muted playsinline preload="metadata" src="assets/Overgrowth_02_Normal.mp4#t=3" aria-label="Overgrowth level preview"></video>
+        </div>
+        <div class="project-info">
+          <p class="project-meta">Mega Man Maker · Solo project</p>
+          <h3>Overgrowth</h3>
+          <p class="project-desc">
+            A Mega Man Maker level built in three versions: Easy, Normal and Hard. Open the
+            project to watch each one.
+          </p>
+          <ul class="project-tags"><li>Mega Man Maker</li><li>Level design</li><li>Difficulty tuning</li></ul>
+        </div>
+
+        <details class="project-more">
+          <summary><span class="when-closed">View full project</span><span class="when-open">Hide details</span></summary>
+          <div class="project-panel">
+            <div class="video-set">
+              <figure>
+                <div class="video-frame">
+                  <video controls playsinline preload="metadata" src="assets/Overgrowth_01_Easy.mp4#t=1"></video>
+                </div>
+                <figcaption>Easy</figcaption>
+              </figure>
+              <figure>
+                <div class="video-frame">
+                  <video controls playsinline preload="metadata" src="assets/Overgrowth_02_Normal.mp4#t=1"></video>
+                </div>
+                <figcaption>Normal</figcaption>
+              </figure>
+              <figure>
+                <div class="video-frame">
+                  <video controls playsinline preload="metadata" src="assets/Overgrowth_03_Hard.mp4#t=1"></video>
+                </div>
+                <figcaption>Hard</figcaption>
+              </figure>
+            </div>
+          </div>
+        </details>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="design">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Game Design</h2>
+    </div>
+
+    <div class="projects">
+      <article class="project" id="bubbles-delivery">
+        <div class="project-thumb"><img src="assets/bubbles-rulebook-1.jpg" alt="Bubbles' Delivery rulebook cover: Bubbles the axolotl, the objective and the components" loading="lazy"></div>
+        <div class="project-info">
+          <p class="project-meta">Solo tabletop game · Team project</p>
           <h3>Bubbles' Delivery</h3>
           <p class="project-desc">
-            A solo tabletop game where you play Bubbles, an axolotl courier trying to earn
-            enough to pay off a debt before he loses his scooter. The board is 14 tiles with
-            currents, weather and encounter cards. I designed "Flip of Fate", one of the DLC
-            tiles, which pairs a coin flip with wind, water and mud effects.
+            Bubbles the axolotl took a shady loan to fix his scooter and now owes 80
+            shellbits. You have 8 deliveries to earn it back on a 14-tile lakeside board,
+            planning routes through water, land and currents with each dice roll.
           </p>
-          <ul class="project-tags"><li>Tabletop design</li><li>Figma</li></ul>
+          <ul class="project-tags"><li>Tabletop design</li><li>Systems design</li><li>Figma</li></ul>
           <a class="project-link" href="https://www.figma.com/design/cQIon3RQ0lIs5MqqDfD9v1/Bubbles--Delivery?m=auto&amp;t=TiFJWY3tgOd82m4A-6" target="_blank" rel="noopener">View the Figma board ↗</a>
         </div>
+
+        <details class="project-more">
+          <summary><span class="when-closed">View full project</span><span class="when-open">Hide details</span></summary>
+          <div class="project-panel">
+            <div class="shots shots-2">
+              <a href="assets/bubbles-rulebook-1.jpg" target="_blank" rel="noopener"><img src="assets/bubbles-rulebook-1.jpg" alt="Rulebook page 1: objective, win and lose condition, components" loading="lazy"></a>
+              <a href="assets/bubbles-rulebook-2.jpg" target="_blank" rel="noopener"><img src="assets/bubbles-rulebook-2.jpg" alt="Rulebook page 2: board setup, map points and how to play" loading="lazy"></a>
+              <a href="assets/bubbles-rulebook-3.jpg" target="_blank" rel="noopener"><img src="assets/bubbles-rulebook-3.jpg" alt="Rulebook page 3: player turns, deliveries and encounters" loading="lazy"></a>
+              <a href="assets/bubbles-rulebook-4.jpg" target="_blank" rel="noopener"><img src="assets/bubbles-rulebook-4.jpg" alt="Rulebook page 4: currents, weather and the full board" loading="lazy"></a>
+            </div>
+            <div class="panel-grid">
+              <div>
+                <h4>How it plays</h4>
+                <ul>
+                  <li>At a post office, draw 3 delivery tokens and pick 1; each lists 3 drop-offs, a dice budget and a reward</li>
+                  <li>Roll 2d6 for movement: water costs 1, land costs 2, and riding a current covers 2 steps for 1</li>
+                  <li>Deliver all 3 packages and get back to a post office before your dice run out, or the delivery fails</li>
+                  <li>Encounter points draw cards that can help or hurt, including weather that lasts the whole delivery</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Design goals</h4>
+                <ul>
+                  <li>Turn real courier problems, like tight deadlines and route planning, into the core loop</li>
+                  <li>Higher-risk deliveries pay more, so every pick is a gamble against your dice</li>
+                  <li>Bubbles is an axolotl, so water and rain help him while land and heat slow him down</li>
+                  <li>I designed "Flip of Fate", one of the DLC tiles, which pairs a coin flip with wind, water and mud effects</li>
+                </ul>
+              </div>
+            </div>
+            <a class="project-link" href="assets/Bubbles_Delivery_Research.pdf" target="_blank" rel="noopener">Read the research document (PDF) ↗</a>
+          </div>
+        </details>
       </article>
     </div>
   </div>

@@ -504,3 +504,41 @@ nav.open .nav-toggle span:nth-child(3){ transform:translateY(-7px) rotate(-45deg
   .project-panel{ margin-top:10px; }
   .contact-row{ flex-direction:column; align-items:flex-start; gap:20px; }
 }
+
+/* ============================================
+   PROJECT EXTRAS: video thumbnails, full map, video sets
+   ============================================ */
+.project-thumb video{
+  width:100%; height:100%;
+  object-fit:cover;
+  display:block;
+  background:var(--bg-soft);
+}
+.map-full{
+  display:block;
+  border-radius:6px;
+  overflow:hidden;
+  border:1px solid var(--line);
+  margin-bottom:12px;
+}
+.map-full img{ width:100%; height:auto; }
+.video-set{
+  display:grid;
+  grid-template-columns:repeat(3, minmax(0, 1fr));
+  gap:12px;
+}
+.video-set figure{ margin:0; }
+.video-set figcaption{
+  margin-top:8px;
+  font-family:var(--head);
+  font-weight:600;
+  font-size:15px;
+}
+.project-panel > .project-link{ margin-top:18px; }
+.shots-2{ grid-template-columns:repeat(2, minmax(0, 1fr)); }
+@media (max-width:820px){
+  .video-set{ grid-template-columns:1fr; gap:18px; }
+}
+@media (max-width:560px){
+  .shots-2{ grid-template-columns:1fr; }
+}
