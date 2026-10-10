@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Katie Lim — Interactive Media & Game Design</title>
-<meta name="description" content="Portfolio of Katie Lim, Computer Science student specializing in Interactive Media and Game Design.">
+<title>Katie Lim — Game Programmer &amp; Designer</title>
+<meta name="description" content="Portfolio of Katie Lim, Computer Science student in Interactive Media and Game Design.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&amp;family=Source+Sans+3:wght@400;500;600&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,8 +15,11 @@
 
 <nav>
   <div class="wrap">
-    <a href="index.html" class="nav-mark"><span class="dot"></span>katie.lim</a>
-    <ul class="nav-links">
+    <a href="index.html" class="nav-mark">Katie Lim</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
       <li><a href="index.html" class="active">Home</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="about.html">About</a></li>
@@ -27,16 +30,17 @@
 
 <header class="hero">
   <div class="wrap">
+    <p class="hello">Hi, I'm</p>
     <h1 class="name">Katie Lim</h1>
-    <p class="role">Computer Science — Interactive Media &amp; Game Design</p>
+    <p class="role">Computer Science student in Interactive Media &amp; Game Design.</p>
     <p class="hero-blurb">
-      I build small, playable worlds and the systems that hold them together — part programmer,
-      part designer, always tinkering with whatever engine is open. This portfolio is a work
-      in progress, same as everything in it.
+      I make games in teams, mostly on the gameplay side: enemies, powerups, menus and the
+      systems underneath them. Right now I'm working on Mr. Bones, a game that runs on an
+      engine my team built from scratch.
     </p>
     <div class="hero-actions">
-      <a href="projects.html" class="btn btn-primary">View projects</a>
-      <a href="contact.html" class="btn btn-ghost">Get in touch</a>
+      <a href="projects.html" class="btn btn-primary">See my projects</a>
+      <a href="contact.html" class="btn btn-ghost">Contact me</a>
     </div>
   </div>
 </header>
@@ -44,59 +48,36 @@
 <section id="work">
   <div class="wrap">
     <div class="section-head">
-      <h2>Recent work</h2>
-      <a href="projects.html" class="section-link">See all projects →</a>
+      <h2>Selected work</h2>
+      <a href="projects.html" class="section-link">All projects →</a>
     </div>
 
-    <div class="levels">
-
-      <div class="level">
-        <span class="level-num">01</span>
-        <div class="level-body">
-          <h3>Mr. Bones</h3>
-          <p class="level-desc">
-            A game built on Titan Engine — a game engine my team and I wrote entirely from
-            scratch rather than building on Unity or Unreal. Team Titans project for one of
-            my modules.
-          </p>
-          <div class="level-tags">
-            <span class="tag">Titan Engine (custom)</span>
-            <span class="tag">Team Project</span>
-          </div>
-        </div>
-        <span class="level-status">in progress</span>
-      </div>
-
-      <a class="level" href="https://katie53b.wixsite.com/katielim/programming" target="_blank" rel="noopener">
-        <span class="level-num">02</span>
-        <div class="level-body">
-          <h3>The Museum of Wonders</h3>
-          <p class="level-desc">
-            A VR escape room built in Unity, inspired by museums and the film "Coco." The
-            player wakes up locked inside after hours and has to explore three rooms to find
-            a way out.
-          </p>
-          <div class="level-tags">
-            <span class="tag">Unity</span>
-            <span class="tag">VR</span>
-            <span class="tag">Escape Room</span>
-          </div>
-        </div>
-        <span class="level-status"><span class="live-tag">● playable</span></span>
+    <div class="work-list">
+      <a class="work-card" href="projects.html#mr-bones">
+        <div class="project-thumb"><img src="assets/mrbones-intro.jpg" alt="Mr. Bones intro screen" loading="lazy"></div>
+        <h3>Mr. Bones</h3>
+        <p>Shrink-and-grow platformer on our own engine. Resource and asset management, audio.</p>
       </a>
-
+      <a class="work-card" href="projects.html#grass">
+        <div class="project-thumb"><img src="https://img.youtube.com/vi/DJYpiA7K47s/hqdefault.jpg" alt="Don't Touch My Grass! gameplay" loading="lazy"></div>
+        <h3>Don't Touch My Grass!</h3>
+        <p>Farm defence game in C++. Enemies, powerups and menus.</p>
+      </a>
+      <a class="work-card" href="projects.html#donut-panic">
+        <div class="project-thumb"><img src="https://static.wixstatic.com/media/d9d9ac_2ef6708afb624f35a8c2cbca67ca9515f000.jpg" alt="DoNut Panic gameplay" loading="lazy"></div>
+        <h3>DoNut Panic</h3>
+        <p>Slither.io with donuts, written in C. Donut variants and the growth mechanic.</p>
+      </a>
     </div>
   </div>
 </section>
 
 <footer>
-  © <span id="year"></span> Katie Lim — built with HTML &amp; CSS, hosted on GitHub Pages
+  © <span id="year"></span> Katie Lim
 </footer>
 
+<script src="site.js" defer></script>
 <script src="background.js" defer></script>
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
 
 </body>
 </html>

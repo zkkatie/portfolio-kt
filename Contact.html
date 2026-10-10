@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact — Katie Lim</title>
-<meta name="description" content="Get in touch with Katie Lim, Computer Science student specializing in Interactive Media and Game Design.">
+<meta name="description" content="Get in touch with Katie Lim.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&amp;family=Source+Sans+3:wght@400;500;600&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,8 +15,11 @@
 
 <nav>
   <div class="wrap">
-    <a href="index.html" class="nav-mark"><span class="dot"></span>katie.lim</a>
-    <ul class="nav-links">
+    <a href="index.html" class="nav-mark">Katie Lim</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="about.html">About</a></li>
@@ -28,31 +31,29 @@
 <header class="page-head">
   <div class="wrap">
     <h1 class="page-title">Contact</h1>
-    <p class="page-sub">Open to internships, collaborators, and freelance work.</p>
+    <p class="page-sub">Open to internships and team projects.</p>
   </div>
 </header>
 
 <section id="contact">
   <div class="wrap">
     <div class="contact-row">
-      <p class="contact-big">Let's build<br>something.</p>
+      <p class="contact-big">Say hello.</p>
       <div class="contact-links">
-        <a href="mailto:your.email@example.com">your.email@example.com</a>
-        <a href="https://github.com/your-username" target="_blank" rel="noopener">github.com/your-username ↗</a>
-        <a href="https://www.linkedin.com/in/katielimklzk" target="_blank" rel="noopener">linkedin.com/in/katielimklzk ↗</a>
+        <!-- Add your email here when you're ready, e.g.
+        <a href="mailto:you@example.com">you@example.com</a> -->
+        <a href="https://www.linkedin.com/in/katielimklzk" target="_blank" rel="noopener">LinkedIn ↗</a>
       </div>
     </div>
   </div>
 </section>
 
 <footer>
-  © <span id="year"></span> Katie Lim — built with HTML &amp; CSS, hosted on GitHub Pages
+  © <span id="year"></span> Katie Lim
 </footer>
 
+<script src="site.js" defer></script>
 <script src="background.js" defer></script>
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
 
 </body>
 </html>

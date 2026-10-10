@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Projects — Katie Lim</title>
-<meta name="description" content="Projects by Katie Lim, Computer Science student specializing in Interactive Media and Game Design.">
+<meta name="description" content="Game projects by Katie Lim.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&amp;family=Source+Sans+3:wght@400;500;600&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,8 +15,11 @@
 
 <nav>
   <div class="wrap">
-    <a href="index.html" class="nav-mark"><span class="dot"></span>katie.lim</a>
-    <ul class="nav-links">
+    <a href="index.html" class="nav-mark">Katie Lim</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="projects.html" class="active">Projects</a></li>
       <li><a href="about.html">About</a></li>
@@ -28,93 +31,158 @@
 <header class="page-head">
   <div class="wrap">
     <h1 class="page-title">Projects</h1>
-    <p class="page-sub">Games and interactive projects, from a from-scratch engine to early coursework in C.</p>
+    <p class="page-sub">Team games I've programmed, and a tabletop game I helped design.</p>
   </div>
 </header>
 
-<section id="work">
+<section id="programming">
   <div class="wrap">
-    <div class="levels">
+    <div class="section-head">
+      <h2>Programming</h2>
+    </div>
 
-      <div class="level">
-        <span class="level-num">01</span>
-        <div class="level-body">
+    <div class="projects">
+
+      <article class="project" id="mr-bones">
+        <div class="project-thumb"><img src="assets/mrbones-intro.jpg" alt="Mr. Bones intro screen: Noah Bones, a lost soul trapped in hell" loading="lazy"></div>
+        <div class="project-info">
+          <p class="project-meta">In progress · Team project</p>
           <h3>Mr. Bones</h3>
-          <p class="level-desc">
-            A game built on Titan Engine — a game engine my team and I wrote entirely from
-            scratch rather than building on Unity or Unreal. Team Titans project for one of
-            my modules.
+          <p class="project-desc">
+            You play as Noah Bones, a soul trapped in hell who can shrink and expand to get
+            through the level, collect items and find a way out. It runs on Titan Engine,
+            which my team wrote from scratch instead of using Unity or Unreal. I handle
+            resource management, asset management and audio.
           </p>
-          <div class="level-tags">
-            <span class="tag">Titan Engine (custom)</span>
-            <span class="tag">Team Project</span>
-          </div>
+          <ul class="project-tags"><li>Custom engine</li><li>Audio</li><li>Asset pipeline</li></ul>
         </div>
-        <span class="level-status">in progress</span>
-      </div>
+      </article>
 
-      <a class="level" href="https://katie53b.wixsite.com/katielim/programming" target="_blank" rel="noopener">
-        <span class="level-num">02</span>
-        <div class="level-body">
-          <h3>The Museum of Wonders</h3>
-          <p class="level-desc">
-            A VR escape room built in Unity, inspired by museums and the film "Coco." The
-            player wakes up locked inside after hours and has to explore three rooms to find
-            a way out.
+      <article class="project" id="grass">
+        <div class="project-thumb"><img src="https://img.youtube.com/vi/DJYpiA7K47s/hqdefault.jpg" alt="Don't Touch My Grass! gameplay" loading="lazy"></div>
+        <div class="project-info">
+          <p class="project-meta">Year 1, Trimester 2 · Team project</p>
+          <h3>Don't Touch My Grass!</h3>
+          <p class="project-desc">
+            You're a farmer keeping animals off your patch of grass. Every level the patch
+            gets bigger and more animals show up. Built in C++ on AE Engine.
           </p>
-          <div class="level-tags">
-            <span class="tag">Unity</span>
-            <span class="tag">VR</span>
-            <span class="tag">Escape Room</span>
-          </div>
+          <ul class="project-tags"><li>C++</li><li>AE Engine</li><li>Gameplay</li><li>Sprites</li></ul>
         </div>
-        <span class="level-status"><span class="live-tag">● playable</span></span>
-      </a>
 
-      <a class="level" href="https://youtu.be/DJYpiA7K47s" target="_blank" rel="noopener">
-        <span class="level-num">03</span>
-        <div class="level-body">
-          <h3>Grass</h3>
-          <p class="level-desc">
-            A Year 1 Trimester 2 project built in C++ on AE Engine, a lightweight 2D engine
-            used for foundational game-programming coursework.
-          </p>
-          <div class="level-tags">
-            <span class="tag">C++</span>
-            <span class="tag">AE Engine</span>
+        <details class="project-more">
+          <summary><span class="when-closed">View full project</span><span class="when-open">Hide details</span></summary>
+          <div class="project-panel">
+            <div class="video-frame">
+              <iframe src="https://www.youtube-nocookie.com/embed/DJYpiA7K47s" title="Don't Touch My Grass! gameplay video" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
+            </div>
+            <div class="panel-grid">
+              <div>
+                <h4>What I did</h4>
+                <ul>
+                  <li>The five animal enemies (worm, crow, horse, cow, goat): sprites, movement speeds, spawning and draw order</li>
+                  <li>Powerup orbs that boost speed, boost damage or freeze enemies, dropped when an enemy dies</li>
+                  <li>Main menu, settings and credits screens, and the transitions between levels</li>
+                </ul>
+              </div>
+              <div>
+                <h4>How it plays</h4>
+                <ul>
+                  <li>Animals walk in from the edges, heading for your grass</li>
+                  <li>Each animal moves at its own speed</li>
+                  <li>Three levels, each with a bigger patch to protect</li>
+                </ul>
+              </div>
+            </div>
           </div>
-        </div>
-        <span class="level-status"><span class="live-tag">● watch demo</span></span>
-      </a>
+        </details>
+      </article>
 
-      <a class="level" href="https://youtu.be/ATPDgfu5EDs" target="_blank" rel="noopener">
-        <span class="level-num">04</span>
-        <div class="level-body">
-          <h3>Do Not Panic</h3>
-          <p class="level-desc">
-            My Year 1 Trimester 1 project, written in C using Cprocessing — an early
-            introduction to building something playable from the ground up.
+      <article class="project" id="donut-panic">
+        <div class="project-thumb"><img src="https://static.wixstatic.com/media/d9d9ac_2ef6708afb624f35a8c2cbca67ca9515f000.jpg" alt="DoNut Panic gameplay" loading="lazy"></div>
+        <div class="project-info">
+          <p class="project-meta">Year 1, Trimester 1 · Team of 5</p>
+          <h3>DoNut Panic</h3>
+          <p class="project-desc">
+            Slither.io, but you're a donut. Eat smaller donuts to grow, avoid the bad ones,
+            and get big enough to eat the boss donut before it eats you. Written in C with
+            Cprocessing.
           </p>
-          <div class="level-tags">
-            <span class="tag">C</span>
-            <span class="tag">Cprocessing</span>
-          </div>
+          <ul class="project-tags"><li>C</li><li>Cprocessing</li><li>Gameplay</li></ul>
         </div>
-        <span class="level-status">archived</span>
-      </a>
+
+        <details class="project-more">
+          <summary><span class="when-closed">View full project</span><span class="when-open">Hide details</span></summary>
+          <div class="project-panel">
+            <div class="video-frame">
+              <!-- Plays assets/donut-panic.mp4 if you add it; otherwise streams the copy hosted on Wix -->
+              <video controls playsinline preload="metadata" poster="https://static.wixstatic.com/media/d9d9ac_2ef6708afb624f35a8c2cbca67ca9515f000.jpg">
+                <source src="assets/donut-panic.mp4" type="video/mp4">
+                <source src="https://video.wixstatic.com/video/d9d9ac_2ef6708afb624f35a8c2cbca67ca9515/720p/mp4/file.mp4" type="video/mp4">
+                Your browser can't play this video.
+              </video>
+            </div>
+            <div class="shots">
+              <a href="assets/donut-gameplay-concept.jpg" target="_blank" rel="noopener"><img src="assets/donut-gameplay-concept.jpg" alt="Pitch slide: the player donut grows by eating prey, then wins or loses against the boss donut" loading="lazy"></a>
+              <a href="assets/donut-cover.jpg" target="_blank" rel="noopener"><img src="assets/donut-cover.jpg" alt="DoNut Panic pitch title slide" loading="lazy"></a>
+            </div>
+            <div class="panel-grid">
+              <div>
+                <h4>What I did</h4>
+                <ul>
+                  <li>Designed the three donut variants</li>
+                  <li>Built the growth mechanic: eat prey, earn points, get bigger</li>
+                </ul>
+              </div>
+              <div>
+                <h4>How it plays</h4>
+                <ul>
+                  <li>Eating a "bad" donut costs health</li>
+                  <li>Touching a bigger donut ends the run</li>
+                  <li>Outgrow the boss donut and eat it before time runs out</li>
+                </ul>
+              </div>
+            </div>
+            <p class="panel-credit">Team DunkinDonut: Cheryl Choo, Jia Min Tan, Katie Lim, Pearly Lin, Rishika Bimal Attodi</p>
+          </div>
+        </details>
+      </article>
 
     </div>
   </div>
 </section>
 
+<section id="design">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Design</h2>
+    </div>
+
+    <div class="projects">
+      <article class="project no-thumb" id="bubbles-delivery">
+        <div class="project-info">
+          <p class="project-meta">Tabletop game · Team project</p>
+          <h3>Bubbles' Delivery</h3>
+          <p class="project-desc">
+            A solo tabletop game where you play Bubbles, an axolotl courier trying to earn
+            enough to pay off a debt before he loses his scooter. The board is 14 tiles with
+            currents, weather and encounter cards. I designed "Flip of Fate", one of the DLC
+            tiles, which pairs a coin flip with wind, water and mud effects.
+          </p>
+          <ul class="project-tags"><li>Tabletop design</li><li>Figma</li></ul>
+          <a class="project-link" href="https://www.figma.com/design/cQIon3RQ0lIs5MqqDfD9v1/Bubbles--Delivery?m=auto&amp;t=TiFJWY3tgOd82m4A-6" target="_blank" rel="noopener">View the Figma board ↗</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
 <footer>
-  © <span id="year"></span> Katie Lim — built with HTML &amp; CSS, hosted on GitHub Pages
+  © <span id="year"></span> Katie Lim
 </footer>
 
+<script src="site.js" defer></script>
 <script src="background.js" defer></script>
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
 
 </body>
 </html>
