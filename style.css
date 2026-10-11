@@ -378,15 +378,55 @@ section + section{ border-top:1px solid var(--line); }
   width:max-content;
 }
 .contact-links a:hover{ text-decoration:underline; text-underline-offset:3px; }
+.contact-links{ gap:18px; }
+.contact-item{ display:flex; flex-direction:column; gap:2px; margin:0; }
+.contact-label{ font-size:13.5px; font-weight:600; color:var(--ink-dim); }
+.contact-links a{ max-width:100%; overflow-wrap:anywhere; }
+
+.about-photo{
+  width:200px; max-width:60%;
+  aspect-ratio:4 / 5;
+  object-fit:cover;
+  border-radius:10px;
+  border:1px solid var(--line);
+  display:block;
+  margin:0 auto 22px;
+}
 
 footer{
   position:relative; z-index:1;
   border-top:1px solid var(--line);
-  padding:28px var(--pad) 36px;
+  padding:clamp(40px, 6vw, 64px) 0 28px;
+  background:var(--bg-soft);
+  scroll-margin-top:64px;
+}
+.footer-inner{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  flex-wrap:wrap;
+  gap:28px 48px;
+}
+.footer-title{
+  font-family:var(--head);
+  font-weight:700;
+  font-size:clamp(26px, 4vw, 34px);
+  line-height:1.1;
+}
+.footer-sub{ margin-top:8px; color:var(--ink-dim); }
+.footer-links{ display:flex; flex-direction:column; gap:16px; }
+.footer-links a{
+  font-weight:600;
+  text-decoration:none;
+  max-width:100%;
+  overflow-wrap:anywhere;
+}
+.footer-links a:hover{ text-decoration:underline; text-underline-offset:3px; }
+.footer-copy{
+  margin-top:clamp(32px, 5vw, 48px);
   text-align:center;
-  font-size:14.5px;
+  font-size:14px;
   color:var(--ink-dim);
-  background:var(--bg);
 }
 
 /* ============================================
@@ -541,3 +581,5 @@ nav.open .nav-toggle span:nth-child(3){ transform:translateY(-7px) rotate(-45deg
 @media (max-width:560px){
   .shots-2{ grid-template-columns:1fr; }
 }
+
+@media (hover:none), (pointer:coarse){ .footer-links a{ display:inline-flex; align-items:center; min-height:40px; } }
