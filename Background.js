@@ -1,6 +1,6 @@
 // Dotted background that reacts to the cursor.
 // A quiet grid of light grey dots; near the cursor the dots ease away,
-// turn blue and are joined by faint lines. Still grid for reduced motion.
+// turn brown and are joined by faint lines. Still grid for reduced motion.
 // Include on every page with <script src="background.js" defer></script>.
 
 (function () {
@@ -17,8 +17,8 @@
   var MAX_PUSH = 10;    // px
   var EASE = 0.12;
 
-  var DOT = [190, 200, 218];   // light grey-blue
-  var BLUE = [31, 79, 216];    // --blue
+  var DOT = [205, 188, 164];   // light tan
+  var BLUE = [138, 90, 48];    // --accent (warm brown)
 
   var cols, rows, pts = [], width, height, dpr;
   var pointer = { x: -9999, y: -9999, active: false };
