@@ -100,7 +100,7 @@
           <summary><span class="when-closed">View full project</span><span class="when-open">Hide details</span></summary>
           <div class="project-panel">
             <div class="video-frame">
-              <iframe src="https://www.youtube-nocookie.com/embed/DJYpiA7K47s" title="Don't Touch My Grass! gameplay video" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
+              <iframe src="https://www.youtube-nocookie.com/embed/ATPDgfu5EDs" title="Don't Touch My Grass! gameplay video" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
             </div>
             <div class="panel-grid">
               <div>
@@ -231,17 +231,17 @@
       </article>
 
       <article class="project" id="overgrowth">
-        <div class="project-thumb">
-          <video muted playsinline preload="metadata" src="assets/Overgrowth_02_Normal.mp4#t=3" aria-label="Overgrowth level preview"></video>
-        </div>
+        <div class="project-thumb"><img src="assets/overgrowth-cover.png" alt="Mega Man on a conveyor in the overgrown lab, with weed-covered platforms, spikes and arrow signs" loading="lazy"></div>
         <div class="project-info">
-          <p class="project-meta">Mega Man Maker · Solo project</p>
+          <p class="project-meta">Mega Man Maker · Solo project · 3 levels</p>
           <h3>Overgrowth</h3>
           <p class="project-desc">
-            A Mega Man Maker level built in three versions: Easy, Normal and Hard. Open the
-            project to watch each one.
+            Escape the overgrown lab. A research facility has been taken over by weeds, and
+            you have to fight your way out across three levels: Easy, Normal and Hard. Each
+            one is built screen by screen around a cadence: introduce a mechanic on its own,
+            stack it with the others towards a peak, then ease off before the finish.
           </p>
-          <ul class="project-tags"><li>Mega Man Maker</li><li>Level design</li><li>Difficulty tuning</li></ul>
+          <ul class="project-tags"><li>Mega Man Maker</li><li>Level design</li><li>Cadence &amp; pacing</li><li>Difficulty tuning</li></ul>
         </div>
 
         <details class="project-more">
@@ -253,19 +253,43 @@
                   <video controls playsinline preload="metadata" src="assets/Overgrowth_01_Easy.mp4#t=1"></video>
                 </div>
                 <figcaption>Easy</figcaption>
+                <p class="cadence">D + A + AD + AD + B + ABD + ABD + ABD + ABD + AB' → Energy Element</p>
               </figure>
               <figure>
                 <div class="video-frame">
                   <video controls playsinline preload="metadata" src="assets/Overgrowth_02_Normal.mp4#t=1"></video>
                 </div>
                 <figcaption>Normal</figcaption>
+                <p class="cadence">B + BD + C + AC + CD + ACD + ABCD + C' + BCD → Energy Element</p>
               </figure>
               <figure>
                 <div class="video-frame">
                   <video controls playsinline preload="metadata" src="assets/Overgrowth_03_Hard.mp4#t=1"></video>
                 </div>
                 <figcaption>Hard</figcaption>
+                <p class="cadence">A + AE + CE + C' + AED + CD + ACE + BCD + Recharge → Boss</p>
               </figure>
+            </div>
+            <div class="panel-grid">
+              <div>
+                <h4>Mechanic legend</h4>
+                <ul>
+                  <li><strong>A</strong> Conveyor belts that pull you left or right</li>
+                  <li><strong>B</strong> Springs to bounce up to platforms or across gaps</li>
+                  <li><strong>C</strong> Swings: grab the bulb, ride across, let go on time</li>
+                  <li><strong>D</strong> Spikes and the fireball-throwing enemy</li>
+                  <li><strong>E</strong> Falling blocks that drop soon after you land</li>
+                </ul>
+              </div>
+              <div>
+                <h4>How the levels are paced</h4>
+                <ul>
+                  <li>Easy teaches one mechanic per screen, then combines conveyors, springs and spikes to peak on screen 6</li>
+                  <li>Normal introduces swings with safe platforms below if you miss, builds to all four mechanics on screen 6, then teaches a harder swing move before the finale</li>
+                  <li>Reused 4-koma rooms come back with a new tileset; in Easy, one gives a second, easier pass right after the peak</li>
+                  <li>Hard adds falling blocks, hides an optional bonus room behind the advanced swing, and ends with a recharge before the boss</li>
+                </ul>
+              </div>
             </div>
           </div>
         </details>

@@ -521,6 +521,19 @@ nav.open .nav-toggle span:nth-child(3){ transform:translateY(-7px) rotate(-45deg
   font-size:15px;
 }
 .project-panel > .project-link{ margin-top:18px; }
+.video-set .cadence{
+  margin-top:4px;
+  font-family:ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
+  font-size:12.5px;
+  line-height:1.5;
+  color:var(--ink-dim);
+}
+.video-set .cadence-note{ font-family:var(--body); font-size:14px; }
+.project-panel li strong{
+  display:inline-block;
+  min-width:1.4em;
+  color:var(--accent);
+}
 .shots-2{ grid-template-columns:repeat(2, minmax(0, 1fr)); }
 @media (max-width:820px){
   .video-set{ grid-template-columns:1fr; gap:18px; }
