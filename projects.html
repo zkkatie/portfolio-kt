@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Projects — Katie Lim</title>
-<meta name="description" content="Game projects by Katie Lim.">
+<meta name="description" content="Tools and game projects by Katie Lim.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&amp;family=Source+Sans+3:wght@400;500;600&amp;display=swap" rel="stylesheet">
@@ -30,6 +30,68 @@
     <p class="page-sub">Projects I've worked on during my time at DigiPen.</p>
   </div>
 </header>
+
+<section id="tools">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Tools &amp; Applications</h2>
+    </div>
+
+    <div class="projects">
+
+      <article class="project" id="wayforge">
+        <div class="project-thumb"><img src="assets/wayforge-studio-3d.jpg" alt="WayForge Studio showing the SIT Punggol campus built in 3D from its floor plans" loading="lazy"></div>
+        <div class="project-info">
+          <p class="project-meta">Year 3 Tri 1 · Team of 5 · <span class="status">In progress</span></p>
+          <h3>WayForge Studio</h3>
+          <p class="project-desc">
+            WayForge is our CSD3401 Team 27 project. Users can give it
+            floor plan pictures (one per floor) and it works out the walls, doors, rooms, stairs and lifts,
+            then saves the whole building as a .wfb file you can navigate. There are three parts:
+            the <strong>Studio</strong> to upload floor plans, fix up the rooms and publish the building;
+            the <strong>Navigator</strong> to pick a room and get walking directions to another room;
+            and the <strong>3D viewer</strong> to walk around the building in 3D in the browser.
+          </p>
+          <ul class="project-tags"><li>React</li><li>JavaScript</li><li>Unity / C#</li><li>C++</li><li>Tools &amp; UX</li></ul>
+          <a class="project-link" href="https://navigation.duckdns.org" target="_blank" rel="noopener">Try the live Navigator ↗</a>
+        </div>
+
+        <details class="project-more">
+          <summary><span class="when-closed">View full project</span><span class="when-open">Hide details</span></summary>
+          <div class="project-panel">
+            <div class="shots shots-2">
+              <a href="assets/wayforge-studio-3d.jpg" target="_blank" rel="noopener"><img src="assets/wayforge-studio-3d.jpg" alt="WayForge Studio: the 3D view of all 10 SIT Punggol campus blocks with their link bridges" loading="lazy"></a>
+              <a href="assets/wayforge-navigator.jpg" target="_blank" rel="noopener"><img src="assets/wayforge-navigator.jpg" alt="WayForge Navigator: the SIT Punggol campus map with a list of rooms to pick a starting point from" loading="lazy"></a>
+            </div>
+            <div class="panel-grid">
+              <div>
+                <h4>What I did</h4>
+                <ul>
+                  <li>Built the first version of the Studio website in React: a building list, floor plan upload and a 2D editor where users fix what the engine got wrong, name rooms and publish the building to the Navigator</li>
+                  <li>Added a crop and measure tool for plans with a scale legend, auto-crop on upload, and saving that rebuilds the walking path while keeping room names and stair links</li>
+                  <li>Made room labels resize with zoom and wrote an in-app walkthrough on how to use the Studio</li>
+                  <li>Built the Unity version of the Studio as an editor tool: the plan canvas, click-to-select, room tagging, wall properties, route preview and "Make 3D"</li>
+                  <li>Worked on wf_read, the C++ step that reads rooms and doors from a plan</li>
+                  <li>Set up the audio: an audio pipeline into Unity with 8 royalty-free sounds and an audio config</li>
+                  <li>Wrote the deploy script that puts the websites on our team server, and integrated a teammate's 3D viewer into the navigation app</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Where it is now</h4>
+                <ul>
+                  <li>Done: floor plan conversion, multiple floors with stairs and lifts, routing between rooms, the 3D web viewer, and the Studio and Navigator websites</li>
+                  <li>Next: QR check-in points and routes between buildings</li>
+                  <li>Why it's not a game: it's a wayfinding tool for people who need to get around a real building, built for the team who publish the maps and the visitors who use them</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </details>
+      </article>
+
+    </div>
+  </div>
+</section>
 
 <section id="programming">
   <div class="wrap">

@@ -583,3 +583,17 @@ nav.open .nav-toggle span:nth-child(3){ transform:translateY(-7px) rotate(-45deg
 }
 
 @media (hover:none), (pointer:coarse){ .footer-links a{ display:inline-flex; align-items:center; min-height:40px; } }
+
+/* Status badge for work in progress */
+.status{
+  display:inline-block;
+  font-size:12px;
+  font-weight:600;
+  letter-spacing:.02em;
+  color:#8a5a00;
+  background:#fff1cc;
+  padding:2px 8px;
+  border-radius:4px;
+  vertical-align:middle;
+}
+.project-info .project-link + .project-link{ margin-left:16px; }
